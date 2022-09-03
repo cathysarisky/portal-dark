@@ -1,12 +1,12 @@
 {
-  "name": "@tryghost/portal",
+  "name": "portal-dark",
   "version": "2.11.1",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/TryGhost/Portal.git"
+    "url": "git://github.com/cathysarisky/portal-dark.git"
   },
-  "author": "Ghost Foundation",
+  "author": "Cathy Sarisky / Forked from Ghost Foundation",
   "unpkg": "umd/portal.min.js",
   "files": [
     "umd/",

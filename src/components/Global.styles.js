@@ -2,26 +2,27 @@ export const GlobalStyles = `
     /* Colors
     /* ----------------------------------------------------- */
     :root {
-        --black: #000;
-        --grey0: #1d1d1d;
-        --grey1: #333;
-        --grey2: #3d3d3d;
-        --grey3: #474747;
-        --grey4: #515151;
-        --grey5: #686868;
-        --grey6: #7f7f7f;
-        --grey7: #979797;
-        --grey8: #aeaeae;
-        --grey9: #c5c5c5;
-        --grey10: #dcdcdc;
-        --grey11: #e1e1e1;
-        --grey12: #eaeaea;
-        --grey13: #f9f9f9;
-        --grey14: #fbfbfb;
-        --white: #fff;
+
         --red: #f02525;
         --yellow: #FFDC15;
         --green: #7FC724;
+        --black: #fff!important;
+        --grey0: #fbfbfb!important;
+        --grey1: #f9f9f9!important;
+        --grey2: #eaeaea!important;
+        --grey3: #e1e1e1!important;
+        --grey4: #dcdcdc!important;
+        --grey5: #c5c5c5!important;
+        --grey6: #aeaeae!important;
+        --grey7: #979797!important;
+        --grey8: #7f7f7f!important;
+        --grey9: #686868!important;
+        --grey10: #515151!important;
+        --grey11: #3d3d3d!important;
+        --grey12: #474747!important;
+        --grey13: #333!important;
+        --grey14: #1d1d1d!important;
+        --white: #000!important;
     }
 
     /* Globals
