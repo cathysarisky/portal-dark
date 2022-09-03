@@ -69,7 +69,7 @@ typings/
 .DS_Store
 
 # Membersjs build folders
-umd/
+
 build/
 
 # Allow .env file
