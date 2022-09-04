@@ -47,11 +47,11 @@ const NotificationStyles = `
     }
 
     .gh-portal-notification p strong {
-        color: var(--white);
+        color: var(--black);
     }
 
     .gh-portal-notification a {
-        color: var(--white);
+        color: var(--black);
         text-decoration: underline;
         transition: all 0.2s ease-in-out;
         outline: none;
