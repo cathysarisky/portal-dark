@@ -43,7 +43,7 @@ const NotificationStyles = `
         text-align: left;
         margin: 0;
         padding: 0 0 0 40px;
-        color: var(--grey13);
+        color: var(--gre0);
     }
 
     .gh-portal-notification p strong {
@@ -82,7 +82,7 @@ const NotificationStyles = `
         top: 5px;
         bottom: 0;
         right: 5px;
-        color: var(--white);
+        color: var(--black);
         cursor: pointer;
         width: 12px;
         height: 12px;
