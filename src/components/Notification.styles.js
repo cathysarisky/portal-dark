@@ -20,7 +20,7 @@ const NotificationStyles = `
         min-height: 66px;
         font-size: 1.3rem;
         letter-spacing: 0.2px;
-        background: rgba(33,33,33,0.95);
+        background: rgba(230,230,230,0.95);
         backdrop-filter: blur(8px);
         color: var(--white);
         border-radius: 7px;
