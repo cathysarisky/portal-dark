@@ -384,9 +384,9 @@ const FrameStyles = `
     align-items: center;
     line-height: 0;
     border-radius: 4px;
-    background: #ffffff;
+    background: #000000;
     padding: 6px 8px 6px 7px;
-    color: #303336;
+    color: #ffffff;
     font-size: 1.25rem;
     letter-spacing: -0.2px;
     font-weight: 500;
