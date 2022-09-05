@@ -6,7 +6,7 @@ I've gone through and changed all the color variables, setting --white to #000 a
 
 This should be a super easy switch.  If you like it exactly how I did it, you can just switch a couple lines in your server config.  Otherwise, feel free to fork and rebuild, following (broadly) the directions given for the original Portal below.
 
-For more details and discussion, see [https:](https://cathy.sarisky.link/did-you-say-you-wanted-dark-mode/)](https://cathy.sarisky.link/did-you-say-you-wanted-dark-mode/)
+For more details and discussion, see [https://cathy.sarisky.link/did-you-say-you-wanted-dark-mode/)](https://cathy.sarisky.link/did-you-say-you-wanted-dark-mode/)
 
 Enjoy!
 
