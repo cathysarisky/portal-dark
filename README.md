@@ -1,4 +1,17 @@
-# Portal
+## Howdy!  Welcome to Portal, with DARK MODE (only)
+
+This is a fork of the regular Portal, the directions for which are below.
+
+I've gone through and changed all the color variables, setting --white to #000 and --black to #fff, and all the greys in between.  I also had to tackle a couple spots where other methods were used to set colors.  Everything looks good for my site, but you should check all the relevant pages.  I didn't have a Stripe account connected to my test site, so I didn't have access to test quite all the options.
+
+This should be a super easy switch.  If you like it exactly how I did it, you can just switch a couple lines in your server config.  Otherwise, feel free to fork and rebuild, following (broadly) the directions given for the original Portal below.
+
+For more details and discussion, see [https:](https://cathy.sarisky.link/did-you-say-you-wanted-dark-mode/)](https://cathy.sarisky.link/did-you-say-you-wanted-dark-mode/)
+
+Enjoy!
+
+
+# Portal (original non-dark version from Ghost)
 
 [![CI Status](https://github.com/TryGhost/portal/workflows/Test/badge.svg?branch=main)](https://github.com/TryGhost/portal/actions)
 [![npm version](https://badge.fury.io/js/%40tryghost%2Fportal.svg)](https://badge.fury.io/js/%40tryghost%2Fportal)
