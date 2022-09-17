@@ -18,7 +18,7 @@ export const ProductsSectionStyles = ({site}) => {
         .gh-portal-products-pricetoggle {
             position: relative;
             display: flex;
-            background: #F3F3F3;
+            background: var(--grey14);
             width: 100%;
             border-radius: 999px;
             padding: 4px;
@@ -34,7 +34,7 @@ export const ProductsSectionStyles = ({site}) => {
             top: 4px;
             bottom: 4px;
             right: 4px;
-            background: #fff;
+            background: var(--white);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
             border-radius: 999px;
             transition: all 0.15s ease-in-out;
@@ -99,7 +99,7 @@ export const ProductsSectionStyles = ({site}) => {
             flex-direction: column;
             align-items: flex-start;
             justify-content: stretch;
-            background: white;
+            background: var(--white);
             padding: 32px;
             border-radius: 7px;
             border: 1px solid var(--grey11);
@@ -344,7 +344,7 @@ export const ProductsSectionStyles = ({site}) => {
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
+           /*background: linear-gradient(0deg, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%); 8/
             z-index: 800;
         }
 
