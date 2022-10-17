@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 
-const {getQueryPrice} = require('./utils/helpers');
+import {getQueryPrice, getUrlHistory} from './utils/helpers';
 
-function formSubmitHandler({event, form, errorEl, siteUrl, submitHandler}) {
+export function formSubmitHandler({event, form, errorEl, siteUrl, submitHandler}) {
     form.removeEventListener('submit', submitHandler);
     event.preventDefault();
     if (errorEl) {
@@ -27,19 +27,24 @@ function formSubmitHandler({event, form, errorEl, siteUrl, submitHandler}) {
     }
 
     form.classList.add('loading');
+    const urlHistory = getUrlHistory();
+    const reqBody = {
+        email: email,
+        emailType: emailType,
+        labels: labels,
+        name: name,
+        autoRedirect: (autoRedirect === 'true')
+    };
+    if (urlHistory) {
+        reqBody.urlHistory = urlHistory;
+    }
 
     fetch(`${siteUrl}/members/api/send-magic-link/`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-            email: email,
-            emailType: emailType,
-            labels: labels,
-            name: name,
-            autoRedirect: (autoRedirect === 'true')
-        })
+        body: JSON.stringify(reqBody)
     }).then(function (res) {
         form.addEventListener('submit', submitHandler);
         form.classList.remove('loading');
@@ -54,7 +59,7 @@ function formSubmitHandler({event, form, errorEl, siteUrl, submitHandler}) {
     });
 }
 
-function planClickHandler({event, el, errorEl, siteUrl, site, member, clickHandler}) {
+export function planClickHandler({event, el, errorEl, siteUrl, site, member, clickHandler}) {
     el.removeEventListener('click', clickHandler);
     event.preventDefault();
     let plan = el.dataset.membersPlan;
@@ -83,6 +88,12 @@ function planClickHandler({event, el, errorEl, siteUrl, site, member, clickHandl
     const metadata = member ? {
         checkoutType: 'upgrade'
     } : {};
+    const urlHistory = getUrlHistory();
+
+    if (urlHistory) {
+        metadata.urlHistory = urlHistory;
+    }
+
     return fetch(`${siteUrl}/members/api/session`, {
         credentials: 'same-origin'
     }).then(function (res) {
@@ -129,7 +140,7 @@ function planClickHandler({event, el, errorEl, siteUrl, site, member, clickHandl
     });
 }
 
-function handleDataAttributes({siteUrl, site, member}) {
+export function handleDataAttributes({siteUrl, site, member}) {
     if (!siteUrl) {
         return;
     }
@@ -340,9 +351,3 @@ function handleDataAttributes({siteUrl, site, member}) {
         el.addEventListener('click', clickHandler);
     });
 }
-
-module.exports = {
-    handleDataAttributes,
-    formSubmitHandler,
-    planClickHandler
-};
