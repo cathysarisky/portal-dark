@@ -1,6 +1,8 @@
 ## Howdy!  Welcome to Portal, with DARK MODE (only)
 
-This is a fork of the regular Portal, the directions for which are below.
+This is a fork of the regular Portal, the directions for which are below.  
+
+CAUTION:  Since I forked, Ghost moved Portal into the monorepo.  This repo is not getting updates from commits on the new monorepo as a result.
 
 I've gone through and changed all the color variables, setting --white to #000 and --black to #fff, and all the greys in between.  I also had to tackle a couple spots where other methods were used to set colors.  Everything looks good for my site, but you should check all the relevant pages.  I didn't have a Stripe account connected to my test site, so I didn't have access to test quite all the options.
 
